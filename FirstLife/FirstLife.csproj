@@ -1,8 +1,19 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-    <PropertyGroup>
-        <OutputType>Exe</OutputType>
-        <TargetFramework>netcoreapp2.0</TargetFramework>
-    </PropertyGroup>
-
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>netcoreapp2.0;net47</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Accord" Version="3.8.2-alpha" />
+    <PackageReference Include="Accord.Video" Version="3.8.2-alpha" />
+    <PackageReference Include="Accord.Video.FFMPEG" Version="3.8.2-alpha" />
+    <PackageReference Include="Accord.Video.FFMPEG.x64" Version="3.8.2-alpha" />
+    <PackageReference Include="encog-dotnet-core" Version="3.4.0" />
+    <PackageReference Include="System.Drawing.Common" Version="4.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Accord.Video.FFMPEG, Version=3.8.2.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7">
+      <HintPath>..\..\..\.nuget\packages\accord.video.ffmpeg\3.8.2-alpha\lib\net462\Accord.Video.FFMPEG.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>
